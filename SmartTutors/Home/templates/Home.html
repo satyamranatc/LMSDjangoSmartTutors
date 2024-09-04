@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tutors - Empowering Minds in Science, Math, and CS</title>
+    <link rel="stylesheet" href="{% static 'Home.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Smart Tutors</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Courses">Courses</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Unlock Your Potential in Science, Math, and Computer Science</h1>
+            <p>Join Smart Tutors and embark on a journey of discovery and innovation</p>
+            <a href="/Courses" class="cta-button">Explore Courses</a>
+        </section>
+
+        <section id="features">
+            <div class="feature">
+                <img src="/api/placeholder/64/64" alt="Expert Instructors">
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals and renowned academics</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/64/64" alt="Interactive Learning">
+                <h3>Interactive Learning</h3>
+                <p>Engage with hands-on projects and real-world applications</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/64/64" alt="Flexible Schedule">
+                <h3>Flexible Schedule</h3>
+                <p>Study at your own pace with our on-demand course library</p>
+            </div>
+        </section>
+
+        <section id="popular-courses">
+            <h2>Popular Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="https://placehold.co/600x400" alt="Introduction to Data Science">
+                    <h3>Introduction to Data Science</h3>
+                    <p>Learn the fundamentals of data analysis and visualization</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="course-card">
+                    <img src="https://placehold.co/600x400" alt="Advanced Calculus">
+                    <h3>Advanced Calculus</h3>
+                    <p>Master complex mathematical concepts and their applications</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="course-card">
+                    <img src="https://placehold.co/600x400" alt="Web Development Bootcamp">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Build modern, responsive websites from scratch</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial">
+                <p>"Smart Tutors transformed my understanding of computer science. The courses are engaging and the
+                    instructors are top-notch!"</p>
+                <p class="author">- Sarah J., Software Engineer</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today to learn more about our courses and how we can help you achieve your goals.</p>
+            <a href="#" class="cta-button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Tutors. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

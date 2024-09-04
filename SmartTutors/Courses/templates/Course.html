@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tutors - Empowering Minds in Science, Math, and CS</title>
+    <link rel="stylesheet" href="{% static 'Course.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Smart Tutors</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Courses">Courses</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div id="CourseGrid">
+            {% for course in CourseList %}
+                <div class="course-card">
+                    <img src="{{ course.course_poster }}" alt="{{ course.title }}">
+                    <h3>{{ course.course_name }}</h3>
+                    <h4>{{ course.instructor }}</h4>
+                    <p>{{ course.duration }}</p>
+                    <p>{{ course.course_description }}</p>
+                    <p>{{ course.price }}</p>
+                    <button>Book Now</button>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+
+   
+</body>
+</html>
